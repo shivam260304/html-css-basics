@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: black;
+            border-radius: 35px 35px 35px 35px;
+        }
+        .container ul{
+            overflow: auto; 
+        }
+        .container li{
+            padding: 10px;
+            color: white;
+            float: left;
+            list-style: none;
+        }
+        .container a {
+            text-decoration: none;
+            color: white;
+        }
+        .searchBox{
+            float: right;
+            margin: 12px 20px;
+        }
+        .searchBox input{
+            border-color: white;
+            border-radius: 10px 10px 10px 10px;
+        }
+        input[type="text"]{
+            transition-property: all;
+        }
+        #i:hover{
+            background-color: orange;
+        }
+        .container a:hover{
+            color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <div class="searchBox">
+                <input id = "i"type="text" placeholder="search">
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
