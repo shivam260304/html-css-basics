@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin: 2px;
+            padding: 2px;
+            height: 300px;
+            width: 300px;
+        }
+        .container{
+            margin: 2px;
+            padding: 2px;
+            border: 4px solid black;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+        }
+        #boxleft{
+            background-color: aqua;
+            margin: 2px;
+            padding: 2px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        #boxright{
+            height: 310px;
+            width: 310px;
+            background-color: yellow;
+            margin: 2px;
+            padding: 2px;
+        }
+        p{
+            justify-content: center;
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid black;
+        }
+        @media (max-width: 400px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="boxleft">
+            <p>Text1</p>
+            <p>text2</p>
+        </div>
+
+        <div id="boxright">
+            <img src="IMG_20230721_231226.jpg" alt="Shivam Rajput">
+        </div>
+
+    </div>
+    
+</body>
+</html>
